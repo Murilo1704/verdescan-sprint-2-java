@@ -1,0 +1,2 @@
+public class TrechoRodovia {
+}
