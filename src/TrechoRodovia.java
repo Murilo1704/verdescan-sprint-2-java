@@ -47,7 +47,11 @@ public class TrechoRodovia {
     }
 
     public void atualizarNivelVegetacao(double novoNivelVegetacao) {
-        this.nivelVegetacao = novoNivelVegetacao;
+        if (novoNivelVegetacao < 0) {
+            nivelVegetacao = 0;
+        } else {
+            nivelVegetacao = novoNivelVegetacao;
+        }
     }
 
     public boolean estaCritico() {
@@ -66,7 +70,7 @@ public class TrechoRodovia {
 
     public void exibirDados() {
         System.out.println("Trecho KM " + quilometroInicial + " ao KM " + quilometroFinal);
-        System.out.println("Tipo de ambiente: " + tipoAmbiente);
+        System.out.println("Ambiente: " + tipoAmbiente);
         System.out.println("Nível da vegetação: " + nivelVegetacao + " cm");
         System.out.println("Prioridade: " + classificarPrioridade());
 

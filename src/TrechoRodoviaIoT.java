@@ -14,8 +14,8 @@ public class TrechoRodoviaIoT extends TrechoRodovia implements MonitoravelViaIoT
     public double transmitirDadosSensor() {
         double leituraSensor = getNivelVegetacao() + 5;
 
-        System.out.println("Sensor " + codigoSensor + " transmitiu leitura automática.");
-        System.out.println("Leitura capturada: " + leituraSensor + " cm");
+        System.out.println("Sensor " + codigoSensor + " transmitiu dados automaticamente.");
+        System.out.println("Leitura capturada pelo sensor: " + leituraSensor + " cm");
 
         return leituraSensor;
     }
