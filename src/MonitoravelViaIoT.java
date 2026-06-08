@@ -1,2 +1,3 @@
-public class MonitoravelViaIoT {
+public interface MonitoravelViaIoT {
+    double transmitirDadosSensor();
 }
